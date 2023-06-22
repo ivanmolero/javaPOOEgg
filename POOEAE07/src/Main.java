@@ -12,10 +12,25 @@ public class Main {
         for (int i = 0; i < personas.length; i++) {
             personas[i] = ps.crearPersona();
         }
+        boolean salir = false;
         do {
             Persona perSel = seleccionaPersona(personas);
             System.out.println("persona seleccionada: " + perSel.getNombre().toUpperCase());
-        } while(true);
+            if (ps.esMayorDeEdad(perSel)) {
+                System.out.println("es mayor de edad");
+            } else {
+                System.out.println("es menor de edad");
+            }
+            if (ps.calcularIMC(perSel) == -1) {
+                System.out.println("esta por debajo de su peso");
+            } else if (ps.calcularIMC(perSel) == 0) {
+                System.out.println("esta en su peso");
+            } else {
+                System.out.println("esta por encima de su peso");
+            }
+            System.out.println("desea salir (s/n):");
+            salir = scan.nextLine().equals("s");
+        } while(!salir);
     }
 
     public static Persona seleccionaPersona(Persona[] personas) {
@@ -27,7 +42,7 @@ public class Main {
                 i++;
             }
             System.out.println("ingrese un valor: ");
-            op = scan.nextInt();
+            op = Integer.parseInt(scan.nextLine());
         } while (op >= personas.length);
         return personas[op];
     }

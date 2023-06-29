@@ -2,6 +2,7 @@ package servicios;
 
 import entidades.Movil;
 
+import java.io.Console;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -13,10 +14,10 @@ public class InterfazServicio {
     MovilServicio ms = new MovilServicio();
     public int mostrarMenu() {
         String[] elementos = {
-                "1. Listar Celulares",
+                ConsoleColors.BLUE + "1. Listar Celulares",
                 "2. Agregar Celular",
                 "3. Mostrar Celular",
-                "4. Salir"
+                "4. Salir" + ConsoleColors.RESET
         };
         for (int i = 0; i < elementos.length; i++) {
             System.out.println(elementos[i]);

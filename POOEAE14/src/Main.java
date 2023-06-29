@@ -4,9 +4,10 @@ public class Main {
     public static void main(String[] args) {
         InterfazServicio is = new InterfazServicio();
         int op = 0;
+        int[] limite = new int[1];
         do {
-            op = is.seleccionaOpcion(4);
+            op = is.seleccionaOpcion(limite);
             is.activaOpcion(op);
-        } while(op != 4);
+        } while(op != limite[0]);
     }
 }

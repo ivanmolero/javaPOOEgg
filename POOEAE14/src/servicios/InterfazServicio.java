@@ -11,7 +11,7 @@ public class InterfazServicio {
     Movil movil;
     List<Movil> moviles = new ArrayList<>();
     MovilServicio ms = new MovilServicio();
-    public void mostrarMenu() {
+    public int mostrarMenu() {
         String[] elementos = {
                 "1. Listar Celulares",
                 "2. Agregar Celular",
@@ -21,18 +21,19 @@ public class InterfazServicio {
         for (int i = 0; i < elementos.length; i++) {
             System.out.println(elementos[i]);
         }
+        return elementos.length;
     }
 
-    public int seleccionaOpcion(int salida) {
+    public int seleccionaOpcion(int[] limite) {
         int op = 0;
         do {
-            mostrarMenu();
+            limite[0] = mostrarMenu();
             System.out.println("seleccione la opción: ");
             op = Integer.parseInt(scan.nextLine());
-            if (op > salida || op < 0) {
+            if (op > limite[0] || op < 0) {
                 System.out.println("ingrese una opción válida");
             }
-        } while(op > salida || op < 0);
+        } while(op > limite[0] || op < 0);
         return op;
     }
 

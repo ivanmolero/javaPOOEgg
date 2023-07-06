@@ -1,19 +1,20 @@
 package servicios;
 
-import entidades.Ecuacion2do;
+import entidades.NIF;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
-public class AppService {
+public class AppServicio {
     Scanner scan = new Scanner(System.in);
-    Ecuacion2doServicio eserv = new Ecuacion2doServicio();
     String[] menu = {
-            "1. Ingresar ecuación",
-            "2. Mostrar ecuación",
-            "3. Calcula raices",
-            "4. Salir"
+            "1. Crear DNI",
+            "2. Mostrar NIFs",
+            "3. Salir"
     };
-    Ecuacion2do ecuacion = null;
+    List<NIF> nifs = new ArrayList<>();
+    NIFServicio nserv = new NIFServicio();
     public void iniciar() {
         int opcion = 0;
         do {
@@ -25,19 +26,12 @@ public class AppService {
     private void accionaOpcion(int opcion) {
         switch (opcion) {
             case 1:
-                ecuacion = eserv.crearEcuacion();
+                nifs.add(nserv.crearNIF());
                 break;
             case 2:
-                System.out.println("la ecuación es: ");
-                System.out.println(ecuacion.toString());
-                System.out.println("y el discriminante es: " + eserv.getDiscriminante(ecuacion));
-                break;
-            case 3:
-                if (ecuacion == null) {
-                    System.out.println("primero ingrese los valores de la ecuación");
-                } else {
-                    eserv.calcular(ecuacion);
-                }
+                nifs.forEach(nif -> {
+                    nserv.mostrar(nif);
+                });
                 break;
         }
     }

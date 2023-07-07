@@ -58,6 +58,13 @@ public class AhorcadoServicio {
                 System.out.println("Lo sentimos, no adivinó la palabra");
             }
         }
+
+        reiniciarAhorcado(ahorcado);
+    }
+
+    private void reiniciarAhorcado(Ahorcado ahorcado) {
+        ahorcado.setCantidadJugadasActual(0);
+        ahorcado.setPalabraBuscar(ahorcado.getPalabraBuscar());
     }
 
     private boolean continuaJugando(Ahorcado ahorcado) {

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="POOAhorcado:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/POOAhorcado_jar</output-path>
+    <root id="archive" name="POOAhorcado.jar">
+      <element id="module-output" name="POOAhorcado" />
+    </root>
+  </artifact>
+</component>

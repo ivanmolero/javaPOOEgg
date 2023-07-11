@@ -1,5 +1,3 @@
-package servicios;
-
 import servicios.AppServicio;
 
 public class Main {

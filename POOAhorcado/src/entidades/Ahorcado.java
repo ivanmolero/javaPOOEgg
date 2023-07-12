@@ -1,12 +1,12 @@
 package entidades;
 
 public class Ahorcado {
-    String[] vectorPalabra;
-    String[] vectorAvance; // _a_a__a
-    String palabra;
-    int letrasEncontradas;
-    int jugadasMaximas;
-    int jugadasRealizadas;
+    private String[] vectorPalabra;
+    private String[] vectorAvance; // _a_a__a
+    private String palabra;
+    private int letrasEncontradas;
+    private int jugadasMaximas;
+    private int jugadasRealizadas;
 
     public Ahorcado() {
     }

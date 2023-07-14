@@ -6,12 +6,15 @@ public class Rutina {
     private int duracion;
     private int nivelDificultad;
     private String descripcion;
-
+    private static int generador = 0;
     public Rutina() {
+        generador++;
+        id = generador;
     }
 
-    public Rutina(int id, String nombre, int duracion, int nivelDificultad, String descripcion) {
-        this.id = id;
+    public Rutina(String nombre, int duracion, int nivelDificultad, String descripcion) {
+        generador++;
+        id = generador;
         this.nombre = nombre;
         this.duracion = duracion;
         this.nivelDificultad = nivelDificultad;
@@ -56,5 +59,16 @@ public class Rutina {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
+    }
+
+    @Override
+    public String toString() {
+        return "Rutina {" +
+                "\n\tid = " + id +
+                "\n\tnombre = '" + nombre + '\'' +
+                "\n\tduracion = " + duracion +
+                "\n\tnivelDificultad = " + nivelDificultad +
+                "\n\tdescripcion = '" + descripcion + '\'' +
+                '}';
     }
 }

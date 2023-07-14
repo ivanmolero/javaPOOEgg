@@ -1,10 +1,18 @@
 package servicios;
 
+import entidades.Cliente;
+import entidades.Rutina;
+
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class AppServicio {
     Scanner scan = new Scanner(System.in);
+    ClienteServicio clienteServicio = new ClienteServicio();
+    RutinaServicio rutinaServicio = new RutinaServicio();
+    List<Cliente> clientes = new ArrayList<>();
+    List<Rutina> rutinas = new ArrayList<>();
     String[] menu = {
             "Mantenimiento Cliente",
             "Mantenimiento Rutina",
@@ -53,12 +61,16 @@ public class AppServicio {
     private void accionaOpcionMenuCRUDRutina(int op) {
         switch (op) {
             case 1:
+                rutinaServicio.listarRutinas(rutinas);
                 break;
             case 2:
+                rutinaServicio.crearRutina(rutinas);
                 break;
             case 3:
+                rutinaServicio.editarRutina(rutinas);
                 break;
             case 4:
+                rutinaServicio.eliminaRutina(rutinas);
                 break;
         }
     }
@@ -66,12 +78,16 @@ public class AppServicio {
     private void accionaOpcionMenuCRUDCliente(int op) {
         switch (op) {
             case 1:
+                clienteServicio.listarClientes(clientes);
                 break;
             case 2:
+                clienteServicio.crearCliente(clientes);
                 break;
             case 3:
+                clienteServicio.editarCliente(clientes);
                 break;
             case 4:
+                clienteServicio.eliminaCliente(clientes);
                 break;
         }
     }

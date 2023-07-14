@@ -7,12 +7,16 @@ public class Cliente {
     private int edad;
     private double altura;
     private String objetivo;
+    private static int generador;
 
     public Cliente() {
+        generador++;
+        id = generador;
     }
 
-    public Cliente(int id, String nombre, double peso, int edad, double altura, String objetivo) {
-        this.id = id;
+    public Cliente(String nombre, double peso, int edad, double altura, String objetivo) {
+        generador++;
+        id = generador;
         this.nombre = nombre;
         this.peso = peso;
         this.edad = edad;
@@ -66,5 +70,17 @@ public class Cliente {
 
     public void setObjetivo(String objetivo) {
         this.objetivo = objetivo;
+    }
+
+    @Override
+    public String toString() {
+        return "Cliente {" +
+                "\n\tid = " + id +
+                "\n\tnombre = '" + nombre + '\'' +
+                "\n\tpeso = " + peso +
+                "\n\tedad = " + edad +
+                "\n\taltura = " + altura +
+                "\n\tobjetivo='" + objetivo + '\'' +
+                "\n\t}";
     }
 }

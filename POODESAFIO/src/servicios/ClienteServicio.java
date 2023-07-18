@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class ClienteServicio {
-    Scanner scan = new Scanner(System.in);
+    Scanner scan = AppServicio.scan;
     public void crearCliente(List<Cliente> lista) {
         System.out.println("CREAR CLIENTE");
         Cliente cliente = new Cliente();

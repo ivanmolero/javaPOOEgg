@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class AppServicio {
-    Scanner scan = new Scanner(System.in);
+    static Scanner scan = new Scanner(System.in);
     ClienteServicio clienteServicio = new ClienteServicio();
     RutinaServicio rutinaServicio = new RutinaServicio();
     List<Cliente> clientes = new ArrayList<>();

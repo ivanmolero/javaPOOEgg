@@ -13,8 +13,7 @@ public class Rutina {
     }
 
     public Rutina(String nombre, int duracion, int nivelDificultad, String descripcion) {
-        generador++;
-        id = generador;
+        this();
         this.nombre = nombre;
         this.duracion = duracion;
         this.nivelDificultad = nivelDificultad;

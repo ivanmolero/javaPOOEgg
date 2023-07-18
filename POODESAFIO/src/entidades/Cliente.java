@@ -7,7 +7,7 @@ public class Cliente {
     private int edad;
     private double altura;
     private String objetivo;
-    private static int generador;
+    private static int generador = 0;
 
     public Cliente() {
         generador++;
@@ -15,8 +15,7 @@ public class Cliente {
     }
 
     public Cliente(String nombre, double peso, int edad, double altura, String objetivo) {
-        generador++;
-        id = generador;
+        this();
         this.nombre = nombre;
         this.peso = peso;
         this.edad = edad;

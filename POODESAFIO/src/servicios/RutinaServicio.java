@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class RutinaServicio {
-    Scanner scan = new Scanner(System.in);
+    Scanner scan = AppServicio.scan;
     public void crearRutina(List<Rutina> lista) {
         System.out.println("CREAR RUTINA");
         Rutina rutina = new Rutina();

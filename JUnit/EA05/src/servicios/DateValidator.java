@@ -6,7 +6,7 @@ public class DateValidator {
         boolean diaMes = (mes > 0 && mes < 13) && (dia > 0 && dia < 32);
         boolean febrero = (mes == 2) && ((dia < 29) || esBisiesto && (dia < 30));
         boolean mes30 = (mes == 4 || mes == 6 || mes == 9 || mes == 11) && (dia < 31);
-        boolean mes31 = !(mes == 4 || mes == 6 || mes == 9 || mes == 11) && (mes != 2);
+        boolean mes31 = !(mes == 2 || mes == 4 || mes == 6 || mes == 9 || mes == 11);
         return diaMes && (febrero || mes30 || mes31);
     }
 }

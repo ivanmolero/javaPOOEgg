@@ -1,8 +1,9 @@
+import servicios.AppService;
 import servicios.RazasService;
 
 public class Main {
     public static void main(String[] args) {
-        RazasService razasService = new RazasService();
-        razasService.guardarRazas();
+        AppService app = new AppService();
+        app.iniciar();
     }
 }

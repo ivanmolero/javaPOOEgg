@@ -14,8 +14,11 @@ public class AppService {
      * punto de entrada desde el método main
      */
     public void iniciar() {
-        razasService.fabricaRazas();
-        razasService.fabricaRazas(5, "raza");
-        razasService.listarRazas();
+        this.razasService.fabricaRazas();
+        this.razasService.fabricaRazas(2, "raza");
+        this.razasService.fabricaRazas(2, "raza");
+        this.razasService.listarRazas();
+        this.razasService.eliminarRaza();
+        this.razasService.eliminarRaza();
     }
 }

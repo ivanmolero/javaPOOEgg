@@ -32,7 +32,7 @@ public class Pais {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Pais pais = (Pais) o;
-        return Objects.equals(getNombre(), pais.getNombre());
+        return Objects.equals(this.getNombre(), pais.getNombre());
     }
 
     @Override

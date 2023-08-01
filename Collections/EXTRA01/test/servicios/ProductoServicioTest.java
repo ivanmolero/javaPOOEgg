@@ -23,7 +23,7 @@ class ProductoServicioTest {
     @Test
     void crearProductoValido() {
         InputStream stdin = System.in;
-        System.setIn(new ByteArrayInputStream("Pantalon\nAdultos\n15\n2\n".getBytes()));
+        System.setIn(new ByteArrayInputStream("Pantalon\nAdulto\n15\n2\n".getBytes()));
         ProductoServicio productoServicio = new ProductoServicio();
 //        ContactManager contactManager = new ContactManager();
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();

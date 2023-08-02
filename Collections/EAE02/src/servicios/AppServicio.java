@@ -44,8 +44,7 @@ public class AppServicio {
                 this.cantanteFamosoServicio.eliminarCantanteFamoso(this.cantantes);
                 break;
             case 4:
-                break;
-            case 5:
+                this.cantanteFamosoServicio.listarCantanteFamoso(this.cantantes);
                 break;
         }
     }

@@ -1,24 +1,27 @@
 package servicios;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import entidades.Libro;
+
+import java.util.*;
 
 public class AppServicio {
     private String[] menu = {
-            "Crear cantantes",
-            "Listar cantantes",
-            "Eliminar cantante",
+            "Crear libros",
+            "Listar libros",
+            "Prestar libro",
+            "Devolver libro",
             "Salir"
     };
     private Scanner scan;
-//    private CantanteFamosoServicio cantanteFamosoServicio;
-//    private List<CantanteFamoso> cantantes;
+    private LibroServicio libroServicio;
+    private Libreria libreria;
+    private Set<Libro> libros;
 
     public AppServicio() {
         this.scan = new Scanner(System.in);
-//        this.cantanteFamosoServicio = new CantanteFamosoServicio();
-//        this.cantantes = new ArrayList<>();
+        this.libroServicio = new LibroServicio();
+        this.libreria = new Libreria();
+        this.libros = new HashSet<>();
     }
 
     public void iniciar() {
@@ -33,14 +36,24 @@ public class AppServicio {
     private void accionaSeleccion(int op) {
         switch (op) {
             case 1:
+                this.libroServicio.fabricaLibros(this.libros);
                 break;
             case 2:
+                this.libroServicio.listarLibros(this.libros);
                 break;
             case 3:
+                if (this.libreria.prestamo(this.libros)) {
+                    System.out.println("se ha realizado el prestamo con éxito");
+                } else {
+                    System.out.println("no ha sido posible realizar el préstamo");
+                }
                 break;
             case 4:
-                break;
-            case 5:
+                if (this.libreria.devolucion(this.libros)) {
+                    System.out.println("se ha realizado la devolución con éxito");
+                } else {
+                    System.out.println("no ha sido posible realizar la devolución");
+                }
                 break;
         }
     }
@@ -64,5 +77,12 @@ public class AppServicio {
     }
 
     private void cargarDatos() {
+        this.libros.add(new Libro("Harry Potter and the Sorcerer's Stone", "J.K. Rowling", 5));
+        this.libros.add(new Libro("The Stand", "Stephen King", 3));
+        this.libros.add(new Libro("The Lord of the Rings", "J.R.R. Tolkien", 1));
+        this.libros.add(new Libro("The Da Vinci Code", "Dan Brown", 2));
+        this.libros.add(new Libro("Twilight", "Stephenie Meyer", 3));
+        this.libros.add(new Libro("The Alchemist", "Paulo Coelho", 2));
+        this.libros.add(new Libro("The Handmaid's Tale", "Margaret Atwood", 2));
     }
 }

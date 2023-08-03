@@ -37,14 +37,11 @@ public class AppServicio {
             case 1:
                 this.cantanteFamosoServicio.fabricaCantanteFamoso(this.cantantes);
                 break;
-            case 2:
+            case 2, 4:
                 this.cantanteFamosoServicio.listarCantanteFamoso(this.cantantes);
                 break;
             case 3:
                 this.cantanteFamosoServicio.eliminarCantanteFamoso(this.cantantes);
-                break;
-            case 4:
-                this.cantanteFamosoServicio.listarCantanteFamoso(this.cantantes);
                 break;
         }
     }

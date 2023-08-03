@@ -16,6 +16,7 @@ public class CodigoPostalServicio {
         System.out.println("ingrese el codigo postal");
         int codigo = Integer.parseInt(scan.nextLine());
         ciudades.put(codigo, nombre);
+        System.out.printf("el codigo %d corresponde a la ciudad %s\n", codigo, ciudades.get(codigo));
     }
 
     public void fabricaCodigoPostal(Map<Integer, String> ciudades) {

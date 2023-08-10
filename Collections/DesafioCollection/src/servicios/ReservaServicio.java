@@ -34,6 +34,17 @@ public class ReservaServicio {
         return reserva;
     }
 
+    public void agregarReserva(Reserva reserva) {
+        this.reservas.add(reserva);
+    }
+
+    public void fabricaReservas(Map<String, Persona> personas, Map<Integer, Habitacion> habitaciones) {
+        do {
+            agregarReserva(crearReserva(personas, habitaciones));
+            System.out.print("desea seguir ingresando personas? (S/N): ");
+        } while(scan.nextLine().equalsIgnoreCase("s"));
+    }
+
     private Integer seleccionaHabitacion(LocalDate fechaInicio, LocalDate fechaFin, Integer cantidadPersonas, Map<Integer, Habitacion> habitaciones) {
         final Set<Habitacion> disponibles = new HashSet<>();
         habitaciones.forEach((integer, habitacion) -> {

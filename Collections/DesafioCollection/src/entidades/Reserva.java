@@ -78,4 +78,17 @@ public class Reserva {
     public void setEsAlojamiento(Boolean esAlojamiento) {
         this.esAlojamiento = esAlojamiento;
     }
+
+    @Override
+    public String toString() {
+        return "Reserva{" +
+                "id=" + id +
+                ", numeroHabitacion=" + numeroHabitacion +
+                ", cantidadPersonas=" + cantidadPersonas +
+                ", responsable=" + responsable +
+                ", fechaInicio=" + fechaInicio +
+                ", fechaFin=" + fechaFin +
+                ", esAlojamiento=" + esAlojamiento +
+                '}';
+    }
 }

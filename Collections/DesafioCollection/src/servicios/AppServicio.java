@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class AppServicio {
     private String[] menu = {
-            "PERSONAS",
+            "Mantenimiento Personas",
             "Crear Reservas",
             "Listar Reservas",
             "Ver Alojamientos",
@@ -15,6 +15,8 @@ public class AppServicio {
     private String[] menuPersona = {
             "Crear Personas",
             "Listar Personas",
+            "Editar Persona",
+            "Eliminar Persona",
             "Salir"
     };
     private Scanner scan;
@@ -52,7 +54,10 @@ public class AppServicio {
                 } while(opcion != menuPersona.length);
                 break;
             case 2:
-                this.reservaServicio.crearReserva(this.personaServicio.getPersonas(), this.habitacionServicio.getHabitaciones());
+                this.reservaServicio.fabricaReservas(
+                        this.personaServicio.getPersonas(),
+                        this.habitacionServicio.getHabitaciones()
+                );
                 break;
             case 3:
                 this.reservaServicio.listarReservas();
@@ -69,6 +74,12 @@ public class AppServicio {
                 break;
             case 2:
                 this.personaServicio.listarPersonas();
+                break;
+            case 3:
+                this.personaServicio.editarPersona();
+                break;
+            case 4:
+                this.personaServicio.eliminarPersona();
                 break;
         }
     }

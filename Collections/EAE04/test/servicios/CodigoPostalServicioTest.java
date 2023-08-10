@@ -60,21 +60,24 @@ class CodigoPostalServicioTest {
         String[] salidas = outputText.split(key);
         //.substring(outputText.indexOf(key) + key.length()).trim();
         assertAll(
-                () -> {assertEquals("el codigo 11630 corresponde a la ciudad Abrajaneja", salidas[2].trim() );},
+                () -> {assertEquals("el codigo 11630 corresponde a la ciudad Abrajanejo", salidas[2].trim() );},
                 () -> {assertEquals("el codigo 11350 corresponde a la ciudad Albergue", salidas[6].trim() );},
-                () -> {assertEquals("el codigo 11693 corresponde a la ciudad Alcalá de Valle", salidas[10].trim() );}
+                () -> {assertEquals("el codigo 11693 corresponde a la ciudad Alcalá del Valle", salidas[10].trim() );}
         );
     }
 
     @Test
     void listarCodigoPostal() {
+
     }
 
     @Test
     void buscaCiudad() {
+
     }
 
     @Test
     void eliminaCiudad() {
+
     }
 }

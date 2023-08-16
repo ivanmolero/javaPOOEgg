@@ -1,21 +1,24 @@
 package entidades;
 
+import java.util.List;
+
 public class Persona {
     private String nombre;
     private String apellido;
     private Integer edad;
     private String documento;
-    private Perro perro;
+    private List<Perro> perros;
 
     public Persona() {
     }
 
-    public Persona(String nombre, String apellido, Integer edad, String documento, Perro perro) {
+    public Persona(String nombre, String apellido, Integer edad, String documento, List<Perro> perros) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
         this.documento = documento;
-        this.perro = perro;
+        this.perros = perros;
+
     }
 
     public String getNombre() {
@@ -50,11 +53,21 @@ public class Persona {
         this.documento = documento;
     }
 
-    public Perro getPerro() {
-        return perro;
+    public List<Perro> getPerros() {
+        return perros;
     }
 
-    public void setPerro(Perro perro) {
-        this.perro = perro;
+    public void setPerros(List<Perro> perros) {
+        this.perros = perros;
+    }
+
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", edad=" + edad +
+                ", documento='" + documento + '\'' +
+                "}\n" + perros;
     }
 }

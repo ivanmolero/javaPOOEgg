@@ -47,4 +47,14 @@ public class Perro {
     public void setTamanio(String tamanio) {
         this.tamanio = tamanio;
     }
+
+    @Override
+    public String toString() {
+        return "Perro{" +
+                "nombre='" + nombre + '\'' +
+                ", raza='" + raza + '\'' +
+                ", edad=" + edad +
+                ", tamanio='" + tamanio + '\'' +
+                '}';
+    }
 }

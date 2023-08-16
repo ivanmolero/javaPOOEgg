@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/home/imolero/IdeaProjects/POO/ClassesRelations/EA01/src</OriginalElement>
+  <nodes>
+    <node x="393.2730013222976" y="20.5">entidades.Perro</node>
+    <node x="-86.7269986752118" y="158.5">servicios.PerroServicio</node>
+    <node x="136.27300132380435" y="158.5">servicios.PersonaServicio</node>
+    <node x="730.2730013222977" y="-14.0">entidades.Persona</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="servicios.PersonaServicio" target="entidades.Persona" relationship="CREATE">
+      <point x="0.0" y="55.0" />
+      <point x="234.27300132380435" y="424.0" />
+      <point x="-187.5" y="210.5" />
+    </edge>
+    <edge source="servicios.PerroServicio" target="entidades.Perro" relationship="CREATE">
+      <point x="0.0" y="-55.0" />
+      <point x="-5.726998675211803" y="141.0" />
+      <point x="-138.0" y="-72.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0766694146743612" showDependencies="true" x="578.0137825421133" y="219.08824655436445" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

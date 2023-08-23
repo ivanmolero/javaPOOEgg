@@ -80,7 +80,7 @@ public class AgendaPelicula {
                 ", precioAsiento=" + precioAsiento +
                 ", ocupaSala=" + ocupaSala +
                 ", exhibePelicula=" + exhibePelicula +
-                ", tieneBoletos=" + this.getTieneBoletos() +
+                ", tieneBoletos=" + this.getTieneBoletos().size() +
                 '}';
     }
 }

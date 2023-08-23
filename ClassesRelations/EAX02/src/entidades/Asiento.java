@@ -42,7 +42,7 @@ public class Asiento {
     @Override
     public String toString() {
         // Operador ternario, es un if que evalua this.estaOcupado, si es true "X", sino " "
-        String ocupado = (this.estaOcupado) ? "X" : " ";
+        String ocupado = (this.estaOcupado) ? "X" : "";
         return this.fila.toString() + this.columna.toString() + ocupado;
     }
 }

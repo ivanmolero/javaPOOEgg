@@ -1,14 +1,19 @@
 package entidades;
 
+import java.text.DecimalFormat;
+
 public class Espectador {
     private String nombre;
     private Integer edad;
     private Double dineroDisponible;
+    private DecimalFormat df;
 
     public Espectador() {
+        this.df = new DecimalFormat("#.00");
     }
 
     public Espectador(String nombre, Integer edad, Double dineroDisponible) {
+        this();
         this.nombre = nombre;
         this.edad = edad;
         this.dineroDisponible = dineroDisponible;
@@ -43,7 +48,7 @@ public class Espectador {
         return "Espectador{" +
                 "nombre='" + nombre + '\'' +
                 ", edad=" + edad +
-                ", dineroDisponible=" + dineroDisponible +
+                ", dineroDisponible=" + df.format(dineroDisponible) +
                 '}';
     }
 }

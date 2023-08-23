@@ -9,5 +9,9 @@ public class AppServicio {
         System.out.println(cineServicio.getCine());
         cineServicio.crearAgendaPeliculas();
         cineServicio.mostrarRegistroPeliculas();
+        cineServicio.crearEspectadores(100);
+        cineServicio.mostrarEspectadores();
+        cineServicio.venderEntradas();
+        cineServicio.mostrarSalas();
     }
 }

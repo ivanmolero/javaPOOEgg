@@ -81,15 +81,23 @@ public class CineServicio {
         for (Espectador espectador : this.espectadores) {
             AgendaPelicula agendaPelicula = this.registroPeliculas.get((int)(Math.random() * this.registroPeliculas.size()));
             if (agendaPelicula.getPrecioAsiento() < espectador.getDineroDisponible()) {
-                List<Asiento> disponibles = asientosDisponibles(agendaPelicula.getTieneBoletos(), agendaPelicula.getOcupaSala().getTieneAsientos());
-                if (!disponibles.isEmpty()) {
-                    Boleto boleto = new Boleto(agendaPelicula, espectador, disponibles.get((int)(Math.random() * disponibles.size())));
-                    agendaPelicula.getTieneBoletos().add(boleto);
-                    System.out.println(boleto);
+                if (agendaPelicula.getExhibePelicula().getEdadMinima() <= espectador.getEdad()) {
+                    List<Asiento> disponibles = asientosDisponibles(agendaPelicula.getTieneBoletos(), agendaPelicula.getOcupaSala().getTieneAsientos());
+                    if (!disponibles.isEmpty()) {
+                        Boleto boleto = new Boleto(agendaPelicula, espectador, disponibles.get((int)(Math.random() * disponibles.size())));
+                        agendaPelicula.getTieneBoletos().add(boleto);
+                        System.out.println(boleto);
+                    } else {
+                        System.out.printf("el %s no puede comprar un boleto porque la %s no tiene asientos disponibles\n",
+                                espectador.getNombre(),
+                                agendaPelicula.getOcupaSala().getNombreSala());
+                    }
                 } else {
-                    System.out.printf("el %s no puede comprar un boleto porque la %s no tiene asientos disponibles\n",
+                    System.out.printf("el %s de %s años, no puede ver la pelicula %s por edad minima: %s\n",
                             espectador.getNombre(),
-                            agendaPelicula.getOcupaSala().getNombreSala());
+                            espectador.getEdad().toString(),
+                            agendaPelicula.getExhibePelicula().getTitulo(),
+                            agendaPelicula.getExhibePelicula().getEdadMinima().toString());
                 }
             } else {
                 System.out.printf("el %s solo tiene %s y la entrada cuesta %s\n",

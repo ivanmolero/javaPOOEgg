@@ -18,9 +18,9 @@ public class Simulador {
 
     private void cargarDatos() {
         String valores = "Alejandro Alberto Andrés Antonio Carlos David Diego Eduardo Fernando Francisco Gabriel Guillermo Héctor Ignacio Iván Javier Jorge José Juan Luis Manuel Marcos Miguel Pablo Pedro Rafael Roberto Santiago Sebastián Tomás Vicente Alejandra Ana Andrea Antonia Beatriz Camila Carolina Catalina Claudia Daniela Diana Elena Erika Gabriela Isabel Irene Jacqueline Jessica Laura Lucía María Mariana Marta Natalia Nicole Patricia Paula Pilar Renata Sofía Valeria Victoria";
-        this.nombres.addAll(Arrays.stream(valores.split(" ")).toList());
+        this.nombres.addAll(Arrays.asList(valores.split(" ")));
         valores = "Acuña Aguilar Alcántara Alonso Álvarez Anaya Aparicio Aranda Arenas Ávila Ayala Baeza Báez Ballesteros Barragán Bautista Beltrán Bernal Blanco Bolaños Bonilla Borja Calderón Camacho Campos Cano Cárdenas Carranza Carrera Castillo Castro Centeno Cerda Chávez Cisneros Colmenares Contreras Cortés Crespo Cruz Cuevas Delgado Díaz Domínguez Escobar Espinosa Estrada Fernández Flores Fonseca Franco García Garza Gómez González Guerrero Gutiérrez Guzmán Hernández Herrera Ibarra Ibáñez Jiménez Lara Limón López Martínez Martínez Medina Meléndez Méndez Mendoza Mercado Molina Morales Moreno Muñoz Narváez Navarro Núñez Olvera Ortega Ortiz Oviedo Páez Paredes Pérez Pérez Pizarro Ponce Ramírez Ramos Rangel Reyes Rivera Rodríguez Romero Ruiz Sánchez Sánchez Sandoval Santos Saucedo Serrano Silva Soto Suárez Tapia Torres Treviño Valdez Valencia Varela Vázquez Velázquez Vidal Villa Villanueva Villegas Villarreal Yáñez";
-        this.apellidos.addAll(Arrays.stream(valores.split(" ")).toList());
+        this.apellidos.addAll(Arrays.asList(valores.split(" ")));
     }
 
     public List<String> generarListaNombres(int cantidad) {
@@ -104,7 +104,7 @@ public class Simulador {
     public void mostrarFacilitadores(List<Alumno> alumnos, Integer cantidad) {
         alumnos.sort(Comparadores.orderByVotosDesc);
         List<Alumno> facilitadores = alumnos.subList(0, cantidad);
-        List<Alumno> suplentes = alumnos.subList(cantidad + 1, 2 * cantidad + 1);
+        List<Alumno> suplentes = alumnos.subList(cantidad, 2 * cantidad);
         System.out.println("FACILITADORES");
         facilitadores.forEach(alumno -> System.out.println(alumno));
         System.out.println();

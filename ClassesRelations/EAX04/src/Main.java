@@ -7,7 +7,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         Simulador simulador = new Simulador();
-        int cantidad = 15;
+        int cantidad = 100;
         List<Alumno> alumnos = simulador.generarAlumnos(cantidad, simulador.generarListaNombres(cantidad), simulador.generarDnis(cantidad));
         simulador.mostrarAlumnos(alumnos);
         List<Voto> votos = simulador.votacion(alumnos, 3);

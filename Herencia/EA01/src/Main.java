@@ -21,5 +21,22 @@ public class Main {
         //Declaracion de objeto caballo
         Animal caballo = new Caballo("Spark", "pasto", 25, "Fino");
         caballo.alimentarse();
+
+        alimentaAnimal(perro1);
+        alimentaAnimal(perro2);
+        alimentaAnimal(gato);
+        alimentaAnimal(caballo);
+        hacerRuido(perro1);
+        hacerRuido(perro2);
+        hacerRuido(gato);
+        hacerRuido(caballo);
+    }
+
+    public static void alimentaAnimal(Animal animal){
+        animal.alimentarse();
+    }
+
+    public static void hacerRuido(Animal animal) {
+        animal.hacerRuido();
     }
 }

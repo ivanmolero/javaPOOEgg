@@ -7,6 +7,6 @@ public class Caballo extends Animal{
 
     @Override
     public void hacerRuido() {
-
+        System.out.println("relinchar");
     }
 }

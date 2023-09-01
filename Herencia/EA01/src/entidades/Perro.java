@@ -13,7 +13,7 @@ public class Perro extends Animal{
 
     @Override
     public void hacerRuido() {
-
+        System.out.println("ladrar");
     }
 
     public void caminar() {

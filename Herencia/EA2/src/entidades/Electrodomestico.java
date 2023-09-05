@@ -1,6 +1,5 @@
 package entidades;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
@@ -10,6 +9,7 @@ public class Electrodomestico {
     protected String color;
     protected Character consumo;
     protected Integer peso;
+
 
     public Electrodomestico() {
     }
@@ -76,5 +76,9 @@ public class Electrodomestico {
         this.consumo = this.comprobarConsumoElectrico(scan.nextLine().charAt(0));
         System.out.println("ingrese el peso del electrodomestico: ");
         this.peso = Integer.parseInt(scan.nextLine());
+    }
+
+    public Integer precioFinal() {
+        return 0;
     }
 }

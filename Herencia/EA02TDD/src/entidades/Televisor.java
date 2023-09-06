@@ -44,7 +44,7 @@ public class Televisor extends Electrodomestico{
     @Override
     public Integer precioFinal() {
         Integer incremento = 0;
-        if (this.resolucion > 40) incremento = (int) (super.precioFinal() * 1.3);
+        if (this.resolucion > 40) incremento += (int) (super.precioFinal() * 0.3);
         if (this.sintonizadorTDT) incremento += 500;
         return super.precioFinal() + incremento;
     }

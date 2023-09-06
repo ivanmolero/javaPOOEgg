@@ -3,6 +3,7 @@ package entidades;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.Scanner;
 
 public class Electrodomestico {
     protected Integer precio;
@@ -51,6 +52,16 @@ public class Electrodomestico {
 
     public void setPeso(Integer peso) {
         this.peso = peso;
+    }
+
+    protected void crearElectrodomestico() {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("ingrese el color: ");
+        this.color = this.comprobarColor(scan.nextLine());
+        System.out.println("ingrese el consumo energetico: ");
+        this.consumoEnergetico = this.comprobarConsumoEnergetico(scan.nextLine().charAt(0));
+        System.out.println("ingrese el peso: ");
+        this.peso = Integer.parseInt(scan.nextLine());
     }
 
     private Character comprobarConsumoEnergetico(Character consumoEnergetico) {

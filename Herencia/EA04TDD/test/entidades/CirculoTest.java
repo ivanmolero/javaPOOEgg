@@ -8,6 +8,13 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CirculoTest {
+    Circulo circulo;
+    Rectangulo rectangulo;
+
+    public CirculoTest() {
+        circulo = new Circulo();
+        rectangulo = new Rectangulo();
+    }
 
     @BeforeEach
     void setUp() {
@@ -19,9 +26,7 @@ class CirculoTest {
 
     @Test
     void circuloImplementsCalculoFormas() {
-        Circulo circulo = new Circulo();
-        Rectangulo rectangulo = new Rectangulo();
-        assertAll(
+        assertAll("pruebas de implementación de interfaz CalculoFormas",
             () -> assertTrue(circulo instanceof CalculoFormas),
             () -> assertTrue(rectangulo instanceof CalculoFormas)
         );
@@ -31,7 +36,7 @@ class CirculoTest {
     void areas() {
         Circulo circulo = new Circulo(5.0);
         Rectangulo rectangulo = new Rectangulo(5.0, 10.0);
-        assertAll(
+        assertAll("pruebas de calculo de area",
                 () -> assertEquals(78.54, circulo.calcularArea(), 0.1),
                 () -> assertEquals(50.0, rectangulo.calcularArea(), 0.1)
         );
@@ -41,7 +46,7 @@ class CirculoTest {
     void perimetros() {
         Circulo circulo = new Circulo(5.0);
         Rectangulo rectangulo = new Rectangulo(5.0, 10.0);
-        assertAll(
+        assertAll( "pruebas de calculo de perimetro",
                 () -> assertEquals(31.416, circulo.calcularPerimetro(), 0.1),
                 () -> assertEquals(30.0, rectangulo.calcularPerimetro(), 0.1)
         );

@@ -1,32 +1,45 @@
 package org.example.entidades;
 
-public class Polideportivo extends Edificio{
+public class Polideportivo extends Edificio {
 
-    private Boolean esTechado;
+    private String nombre;
+
+    private TipoInstalacion tipoInstalacion;
 
     public Polideportivo() {
     }
 
-    public Polideportivo(Double ancho, Double alto, Double largo, Boolean esTechado) {
+    public Polideportivo(Integer ancho, Integer alto, Integer largo, String nombre, TipoInstalacion tipoInstalacion) {
         super(ancho, alto, largo);
-        this.esTechado = esTechado;
+        this.nombre = nombre;
+        this.tipoInstalacion = tipoInstalacion;
     }
 
-    public Boolean getEsTechado() {
-        return esTechado;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setEsTechado(Boolean esTechado) {
-        this.esTechado = esTechado;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public TipoInstalacion getTipoInstalacion() {
+        return tipoInstalacion;
+    }
+
+    public void setTipoInstalacion(TipoInstalacion tipoInstalacion) {
+        this.tipoInstalacion = tipoInstalacion;
     }
 
     @Override
-    public Double calcularSuperficie() {
-        return null;
+    public Integer calcularSuperficie() {
+        Integer superficie = this.alto * this.ancho * 2 + this.alto * this.largo * 2;
+        if (this.tipoInstalacion.equals(TipoInstalacion.TECHADO)) superficie += this.ancho * this.largo;
+        return superficie;
     }
 
     @Override
-    public Double calcularVolumen() {
-        return null;
+    public Integer calcularVolumen() {
+        return this.alto * this.largo * this.ancho;
     }
 }

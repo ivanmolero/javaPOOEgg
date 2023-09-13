@@ -14,7 +14,9 @@ public class AlojamientoServicio {
         for (Alojamiento alojamiento : alojamientos) {
             if (alojamiento instanceof Hotel) salida.add(alojamiento);
         }
-        salida.sort((o1, o2) -> ((Hotel)o2).getPrecioHabitacion().compareTo(((Hotel)o1).getPrecioHabitacion()));
+        salida.sort(
+                (o1, o2) -> ((Hotel)o2).getPrecioHabitacion().compareTo(((Hotel)o1).getPrecioHabitacion())
+        );
         return salida;
     }
 

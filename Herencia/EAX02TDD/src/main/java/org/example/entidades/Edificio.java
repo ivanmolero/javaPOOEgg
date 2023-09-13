@@ -1,46 +1,46 @@
 package org.example.entidades;
 
 public abstract class Edificio {
-    protected Double ancho;
-    protected Double alto;
-    protected Double largo;
+    protected Integer ancho;
+    protected Integer alto;
+    protected Integer largo;
 
     public Edificio() {
     }
 
-    public Edificio(Double ancho, Double alto, Double largo) {
+    public Edificio(Integer ancho, Integer alto, Integer largo) {
         this.ancho = ancho;
         this.alto = alto;
         this.largo = largo;
     }
 
-    public Double getAncho() {
+    public Integer getAncho() {
         return ancho;
     }
 
-    public void setAncho(Double ancho) {
+    public void setAncho(Integer ancho) {
         this.ancho = ancho;
     }
 
-    public Double getAlto() {
+    public Integer getAlto() {
         return alto;
     }
 
-    public void setAlto(Double alto) {
+    public void setAlto(Integer alto) {
         this.alto = alto;
     }
 
-    public Double getLargo() {
+    public Integer getLargo() {
         return largo;
     }
 
-    public void setLargo(Double largo) {
+    public void setLargo(Integer largo) {
         this.largo = largo;
     }
 
-    public abstract Double calcularSuperficie();
+    public abstract Integer calcularSuperficie();
 
-    public abstract Double calcularVolumen();
+    public abstract Integer calcularVolumen();
 
 
 }

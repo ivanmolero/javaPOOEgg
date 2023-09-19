@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class AppServicio {
     Scanner scan;
+    FamiliaServicio familiaServicio;
+    ReporteServicio reporteServicio;
     String[] menu = {
             "Familia",
             "Reportes",
@@ -18,7 +20,9 @@ public class AppServicio {
     };
 
     public AppServicio() {
-        scan = new Scanner(System.in);
+        this.scan = new Scanner(System.in);
+        this.familiaServicio = new FamiliaServicio();
+        this.reporteServicio = new ReporteServicio();
     }
 
     public void iniciar() {
@@ -46,8 +50,22 @@ public class AppServicio {
         }
     }
 
-    private void operarSeleccionMenuFamilia(int op) {
-        
+    private void operarSeleccionMenuFamilia(int opcion) {
+        switch (opcion) {
+            case 1:
+                this.familiaServicio.agregarFamilia(this.familiaServicio.crearFamilia(), this.reporteServicio.getFamilias());
+                break;
+            case 2:
+                this.familiaServicio.editarFamilia(this.reporteServicio.getFamilias());
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            case 5:
+                break;
+
+        }
     }
 
     private int seleccionarMenu(String[] menu) {

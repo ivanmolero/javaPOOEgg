@@ -11,6 +11,10 @@ public final class ConFactorRiesgo extends Familia{
         this.factores = new ArrayList<>();
     }
 
+    public ConFactorRiesgo(String direccion, String ide, String lote, String barrio, String localidad) {
+        super(direccion, ide, lote, barrio, localidad);
+    }
+
     public List<Integer> getFactores() {
         return factores;
     }
@@ -20,6 +24,6 @@ public final class ConFactorRiesgo extends Familia{
     }
 
     public void mostrarFactores() {
-
+        System.out.println(this.factores);
     }
 }

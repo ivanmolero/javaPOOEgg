@@ -12,6 +12,10 @@ public class ReporteServicio {
         this.familias = new ArrayList<>();
     }
 
+    public List<Familia> getFamilias() {
+        return familias;
+    }
+
     public void cantidadPersonas() {
 
     }

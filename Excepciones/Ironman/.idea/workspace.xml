@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4d2c48f0-e626-46fb-968d-54fb8c86147a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../EA02/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EA02/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EA02/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EA02/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EA03/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EA03/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EA03/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EA03/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EA03/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EA03/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EA03/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EA03/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EA03/src/main/java/org/example/DivisionNumero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EA05/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EA05/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EA05/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EA05/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EA05/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EA05/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EA05/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EA05/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EA05/src/main/java/org/example/AppService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entidades/Armadura.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entidades/Dispositivo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entidades/Generador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entidades/IntensidadUso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entidades/TipoDispositivo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Herencia/DesafioHerencia/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Herencia/DesafioHerencia/.idea/gradle.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2VgGZSq71ogalkSbXSu8fEAgVf7" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="openDirectoriesWithSingleClick" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4d2c48f0-e626-46fb-968d-54fb8c86147a" name="Changes" comment="" />
+      <created>1695250373585</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1695250373585</updated>
+      <workItem from="1695250374921" duration="541000" />
+      <workItem from="1695250937101" duration="1592000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

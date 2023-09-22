@@ -5,43 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d2c48f0-e626-46fb-968d-54fb8c86147a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../EA02/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EA02/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EA02/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EA02/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EA03/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EA03/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EA03/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EA03/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EA03/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EA03/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EA03/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EA03/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EA03/src/main/java/org/example/DivisionNumero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EA05/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EA05/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EA05/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EA05/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EA05/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EA05/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EA05/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EA05/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EA05/src/main/java/org/example/AppService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entidades/Armadura.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entidades/Dispositivo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entidades/Generador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entidades/IntensidadUso.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entidades/TipoDispositivo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Herencia/DesafioHerencia/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Herencia/DesafioHerencia/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IronmanFX/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IronmanFX/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IronmanFX/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IronmanFX/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IronmanFX/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IronmanFX/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IronmanFX/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IronmanFX/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IronmanFX/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IronmanFX/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IronmanFX/src/main/java/com/example/ironmanfx/HelloApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IronmanFX/src/main/java/com/example/ironmanfx/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IronmanFX/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IronmanFX/src/main/resources/com/example/ironmanfx/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entidades/Armadura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entidades/Armadura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/servicios/AppService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/servicios/AppService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/servicios/Jarvis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/servicios/Jarvis.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,8 +36,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -103,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1695250373585</updated>
       <workItem from="1695250374921" duration="541000" />
-      <workItem from="1695250937101" duration="1592000" />
+      <workItem from="1695250937101" duration="11497000" />
     </task>
     <servers />
   </component>

@@ -14,7 +14,7 @@ public class Jarvis {
     }
 
     public void estadoGeneral() {
-
+        System.out.println(armadura.toString());
     }
 
     public void estadoBateria() {

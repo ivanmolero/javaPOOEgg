@@ -171,5 +171,18 @@ public class Armadura {
         this.generador.disminuirCarga(this.sintetizador.usar(IntensidadUso.BASICO, segundos));
     }
 
-
+    @Override
+    public String toString() {
+        String salida = String.format("""
+            ARMADURA: MARK I
+                Color Primario: %s
+                Color Secundario: %s
+                Resistencia: %s
+            ----------------------------------------
+            """.stripIndent(), this.colorPrimario, this.colorSecundario, this.resistencia);
+        for (Dispositivo dispositivo : this.dispositivos) {
+            salida += dispositivo.toString();
+        }
+        return salida;
+    }
 }

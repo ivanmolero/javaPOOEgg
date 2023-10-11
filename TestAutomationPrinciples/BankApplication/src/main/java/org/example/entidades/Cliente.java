@@ -1,9 +1,13 @@
 package org.example.entidades;
 
-import lombok.Data;
+import lombok.*;
 
-public @Data class Cliente {
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Cliente {
     private String nombre;
     private String dni;
-    private String direccion;
+    private String password;
+    private Cuenta cuenta;
 }

@@ -1,3 +1,6 @@
+org/example/servicios/CuentaServicio.class
+org/example/entidades/Cliente.class
+org/example/servicios/AppServicio.class
 org/example/servicios/ClienteServicio.class
 org/example/App.class
 org/example/entidades/Cuenta.class

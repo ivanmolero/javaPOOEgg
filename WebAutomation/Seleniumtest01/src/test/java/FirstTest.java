@@ -20,13 +20,13 @@ public class FirstTest {
 
         this.driver = new ChromeDriver();
         driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
         driver.navigate().to("https://www.wikipedia.org");
         WebElement searchInput = driver.findElement(By.id("searchInput"));
         searchInput.sendKeys("Microsoft");
         WebElement searchButton = driver.findElement(By.className("pure-button-primary-progressive"));
         searchButton.click();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         WebElement wikiPageTitle = driver.findElement(By.className("mw-page-title-main"));
         Assert.assertTrue(wikiPageTitle.isDisplayed() && wikiPageTitle.getText().equals("Microsoft"), "la prueba de comparación de datos no ha resultado");
         // capturar todos los links de la página

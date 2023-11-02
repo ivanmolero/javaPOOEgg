@@ -1,5 +1,6 @@
 package test;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import screens.LoginScreen;
@@ -9,6 +10,7 @@ import utils.Driver;
 public class MainScreenTest extends BaseTest{
     @Test
     public void loginScreenTest() {
-        this.mainScreen.clickLoginButton();
+        LoginScreen loginScreen = this.mainScreen.clickLoginButton();
+        Assert.assertEquals("Login / Sign up Form", loginScreen.getTitle());
     }
 }

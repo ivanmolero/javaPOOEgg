@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e4351c54-fc9a-45a7-b446-97294c047aca" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/screens/DragScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/screens/FormsScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/screens/LoginScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/screens/MainScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/screens/SwipeScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/screens/WebviewScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/screens/base/BaseScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test/LoginScreenTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test/MainScreenTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test/SwipeScreenTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utils/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AppiumPOMTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppiumPOMTest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AppiumPOMTest/src/test/java/screens/LoginScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AppiumPOMTest/src/test/java/screens/LoginScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AppiumPOMTest/src/test/java/test/MainScreenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AppiumPOMTest/src/test/java/test/MainScreenTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WebAutomation/PageObjectModel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebAutomation/PageObjectModel/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2XXLRZuaV71OBZ0UIPDuq0TGbL9" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="openDirectoriesWithSingleClick" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/screens" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.SwipeScreenTest.swipeTest">
+    <configuration name="MainScreenTest.dragScreenTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AppiumPageObjectModel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.MainScreenTest" />
+      <option name="METHOD_NAME" value="dragScreenTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainScreenTest.formsScreenTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AppiumPageObjectModel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.MainScreenTest" />
+      <option name="METHOD_NAME" value="formsScreenTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainScreenTest.swipeScreenTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AppiumPageObjectModel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.MainScreenTest" />
+      <option name="METHOD_NAME" value="swipeScreenTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainScreenTest.webviewScreenTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AppiumPageObjectModel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.MainScreenTest" />
+      <option name="METHOD_NAME" value="webviewScreenTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwipeScreenTest.swipeTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AppiumPageObjectModel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.SwipeScreenTest" />
+      <option name="METHOD_NAME" value="swipeTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.SwipeScreenTest.swipeTest" />
+        <item itemvalue="TestNG.MainScreenTest.dragScreenTest" />
+        <item itemvalue="TestNG.MainScreenTest.swipeScreenTest" />
+        <item itemvalue="TestNG.MainScreenTest.formsScreenTest" />
+        <item itemvalue="TestNG.MainScreenTest.webviewScreenTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e4351c54-fc9a-45a7-b446-97294c047aca" name="Changes" comment="" />
+      <created>1698770473725</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698770473725</updated>
+      <workItem from="1698770474764" duration="17461000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

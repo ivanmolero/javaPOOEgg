@@ -41,5 +41,6 @@ public class StepDefinition {
         } else {
             System.out.println("Test fail - names aren't equals");
         }
+        this.characterWikipediaPage.close();
     }
 }

@@ -49,4 +49,8 @@ public class BasePage {
         }
         return null;
     }
+
+    public void close() {
+        this.driver.close();
+    }
 }

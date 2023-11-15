@@ -23,4 +23,5 @@ public class WikipediaPage extends BasePage {
         this.clickOnElement(this.searchButton);
         return new CharacterWikipediaPage(this.driver);
     }
+
 }

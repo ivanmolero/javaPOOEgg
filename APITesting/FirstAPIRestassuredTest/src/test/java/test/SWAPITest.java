@@ -62,6 +62,6 @@ public class SWAPITest extends BaseTest {
     @Test
     public void film404Test() {
         response = RestAssured.given().get(url + "/films/7");
-        softAssert.assertEquals(response.getStatusCode(), 404);
+        softAssert.assertEquals(response.getStatusCode(), 404, "el recurso no existe por lo que se debe responder 404");
     }
 }

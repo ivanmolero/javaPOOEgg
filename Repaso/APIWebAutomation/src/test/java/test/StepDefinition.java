@@ -6,11 +6,14 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import org.testng.asserts.SoftAssert;
 import pages.CharacterWikipediaPage;
 import pages.WikipediaPage;
 import utils.TestDriver;
 
 public class StepDefinition {
+
+    SoftAssert softAssert = new SoftAssert();
     private String character;
     private Response response;
     private WikipediaPage wikipediaPage;
@@ -41,6 +44,14 @@ public class StepDefinition {
         } else {
             System.out.println("Test fail - names aren't equals");
         }
+        if (this.characterWikipediaPage.isVisibleVectorTOC()) {
+            System.out.println("Test pass - lateral nav is visible");
+        } else {
+            System.out.println("Test fail - lateral nav is not visible");
+        }
+
+        softAssert.assertTrue(this.characterWikipediaPage.isVisibleVectorTOC(), "no se muestra la barra lateral de navegacion");
+
         this.characterWikipediaPage.close();
     }
 }

@@ -29,7 +29,7 @@ public class BasePage {
     }
 
     protected void clickOnElement(WebElement element) {
-        this.waitToBeClickable(element);
+        //this.waitToBeClickable(element);
         element.click();
     }
 

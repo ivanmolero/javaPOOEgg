@@ -1,8 +1,10 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class WikipediaPage extends BasePage {
     @FindBy(id = "searchInput")
@@ -10,6 +12,13 @@ public class WikipediaPage extends BasePage {
 
     @FindBy(css = "button[type=\"submit\"]")
     private WebElement searchButton;
+
+    @FindBy(id = "searchLanguage")
+    private WebElement searchLanguageButton;
+
+    @FindBy(css = "option[value=\"en\"]")
+    private WebElement englishOption;
+
     public WikipediaPage(WebDriver driver) {
         super(driver);
         this.driver.get("https://www.wikipedia.org");
@@ -19,9 +28,15 @@ public class WikipediaPage extends BasePage {
         this.sendKeysOnElement(this.searchInput, keys);
     }
 
-    public CharacterWikipediaPage clickSearchButton() {
+    public SearchResultWikipediaPage clickSearchButton() {
         this.clickOnElement(this.searchButton);
-        return new CharacterWikipediaPage(this.driver);
+        return new SearchResultWikipediaPage(this.driver);
+    }
+
+    public void changeLanguageToEnglish() {
+//        this.searchLanguageButton = driver.findElement(By.cssSelector("#searchLanguage"));
+        this.clickOnElement(this.searchLanguageButton);
+        this.clickOnElement(this.englishOption);
     }
 
 }

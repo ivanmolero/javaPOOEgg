@@ -1,15 +1,20 @@
 
-console.log("start");
 
-setTimeout(() => {
-    console.log("settimeout")
-})
 
-Promise.resolve().then(() => {
-    console.log("resolve")
-})
 
-console.log("end")
+// console.log("start");
+//
+// setTimeout(() => {
+//     console.log("settimeout")
+// })
+//
+// Promise.resolve().then(() => {
+//     console.log("resolve")
+// })
+//
+// console.log("end")
+
+
 
 // console.log('start');
 //

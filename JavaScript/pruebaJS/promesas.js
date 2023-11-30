@@ -15,6 +15,21 @@ function fetchDataSWAPI(url) {
     })
     return promesa
 
+    // let url = "https://swapi.dev/api/planets/" + 1
+    // let options = {json: true}
+    // let data = "hola"
+    //
+    // request(url, options, (error, res, body) => {
+    //     if (error) {
+    //         return  console.log(error)
+    //     }
+    //
+    //     if (!error && res.statusCode == 200) {
+    //         data = res.body
+    //     }
+    // })
+    //
+    // console.log(data)
 }
 
 fetchDataSWAPI("https://swapi.dev/api/planets/0").then((res) => {

@@ -6,6 +6,7 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     "baseUrl": "https://qavalidation.com/demo-form", 
-    "viewportWidth": 1300
+    "viewportWidth": 1300,
+    "viewportHeight": 1800
   },
 });

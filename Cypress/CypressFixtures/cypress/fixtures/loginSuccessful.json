@@ -1,0 +1,39 @@
+{
+    "dataOK": [
+        {
+            "username": "juanperez",
+            "password": "pwd"
+        },
+        {
+            "username": "juanagarcia",
+            "password": "pwd"
+        },
+        {
+            "username": "analopez",
+            "password": "pwd"
+        },
+        {
+            "username": "danielquispe",
+            "password": "pwd"
+        }
+    ],
+    "dataNotOK": [
+        {
+            "username": "juanperez",
+            "password": "abc"
+        },
+        {
+            "username": "juanagarcia",
+            "password": "123"
+        },
+        {
+            "username": "analopez",
+            "password": "a@bc"
+        },
+        {
+            "username": "danielquispe",
+            "password": ".;ndf3"
+        }
+    ]
+    
+}

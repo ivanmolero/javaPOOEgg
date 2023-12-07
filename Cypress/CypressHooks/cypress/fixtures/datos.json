@@ -1,0 +1,15 @@
+{
+    "dataRegister": {
+        "username": "jperez",
+        "email": "jperez@gmail.com",
+        "title": "Mr.",
+        "name": "Juan Perez",
+        "password": "1f5ers6af5ea63FES7486",
+        "nacimiento": {
+            "dia": 20,
+            "mes": "August",
+            "anio": "1980"
+        }
+
+    }
+}

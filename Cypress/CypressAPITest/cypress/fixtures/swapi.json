@@ -1,0 +1,10 @@
+{
+  "firstPlanet": {
+    "gravity": "1.1 standard",
+  	"terrain": "tundra, ice caves, mountain ranges"
+  },
+  "firstPlanetLastFilm": {
+    "gravity": "1 standard",
+	  "terrain": "desert"
+  }
+}

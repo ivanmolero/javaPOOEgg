@@ -1,0 +1,29 @@
+{
+  "noFail": {
+    "username": "student",
+    "password": "Password123", 
+    "message": "Logged In Successfully"
+  }, 
+  "failUsername": {
+    "username": "wrongUsername",
+    "password": "Password123", 
+    "message": "Your username is invalid!"
+  }, 
+  "failPassword": {
+    "username": "student",
+    "password": "wrongPassword", 
+    "message": "Your password is invalid!"
+  }, 
+  "coursesTitles": [
+    "Selenium WebDriver and Java Monthly Subscription Bundle",
+    "Selenium WebDriver with Java for beginners",
+    "Selenium WebDriver with Python for beginners",
+    "Java for Testers", 
+    "Python: The Complete Guide for Software Testers", 
+    "Advanced Selenium WebDriver with Java and TestNG", 
+    "XPath locators for Selenium", 
+    "REST Assured. API test automation for beginners", 
+    "Advanced Selenium Grid and Cloud",
+    "Advanced Selenium testing framework with Java"
+  ]
+}

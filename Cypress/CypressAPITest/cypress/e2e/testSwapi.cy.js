@@ -47,8 +47,9 @@ describe('template spec', () => {
             expect(response.body.terrain).to.equal(swapi.firstPlanetLastFilm.terrain)
 
             // queda pendiente validar la url, no consigo leerla del request del response
-            console.log(response.request)
-            expect(response.request.URL).to.equal(firstPlanetUrl)
+            // console.log(response.request)
+            // expect(response.request.URL).to.equal(firstPlanetUrl)
+            expect(response.body.url).to.equal(firstPlanetUrl)
           })
         })
       })

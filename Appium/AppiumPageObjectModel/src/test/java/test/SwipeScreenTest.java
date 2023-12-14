@@ -10,10 +10,10 @@ public class SwipeScreenTest extends BaseTest{
     public void swipeTest() {
         SwipeScreen swipeScreen = this.mainScreen.clickSwipeButton();
         swipeScreen.swipeLeftCarousel();
-        Assert.assertEquals(swipeScreen.getSizeSecondDot(), 292);
-        Assert.assertEquals(swipeScreen.getSizeFirstDot(), 784);
+        this.softAssert.assertFalse(swipeScreen.visibilityFirstCard());
+        this.softAssert.assertTrue(swipeScreen.visibilitySecondCard());
         swipeScreen.swipeRightCarousel();
-        Assert.assertEquals(swipeScreen.getSizeFirstDot(), 292);
-        Assert.assertEquals(swipeScreen.getSizeSecondDot(), 784);
+        this.softAssert.assertTrue(swipeScreen.visibilityFirstCard());
+        this.softAssert.assertFalse(swipeScreen.visibilitySecondCard());
     }
 }

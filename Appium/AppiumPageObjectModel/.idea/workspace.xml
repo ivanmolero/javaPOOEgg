@@ -5,26 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4351c54-fc9a-45a7-b446-97294c047aca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/screens/DragScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/screens/FormsScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/screens/LoginScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/screens/MainScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/screens/SwipeScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/screens/WebviewScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/screens/base/BaseScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/LoginScreenTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/MainScreenTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/SwipeScreenTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppiumPOMTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppiumPOMTest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppiumPOMTest/src/test/java/screens/LoginScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AppiumPOMTest/src/test/java/screens/LoginScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppiumPOMTest/src/test/java/test/MainScreenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AppiumPOMTest/src/test/java/test/MainScreenTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebAutomation/PageObjectModel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebAutomation/PageObjectModel/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/screens/SwipeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/screens/SwipeScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/screens/base/BaseScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/screens/base/BaseScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/SwipeScreenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/SwipeScreenTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,9 +27,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2XXLRZuaV71OBZ0UIPDuq0TGbL9" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -54,19 +40,23 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.SwipeScreenTest.swipeTest.executor&quot;: &quot;Run&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/imolero/IdeaProjects/POO/Appium/AppiumPageObjectModel&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/java/screens" />
@@ -173,6 +163,13 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-3183f394aec4-86fc8109" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -182,6 +179,8 @@
       <option name="presentableId" value="Default" />
       <updated>1698770473725</updated>
       <workItem from="1698770474764" duration="17461000" />
+      <workItem from="1702419860186" duration="6516000" />
+      <workItem from="1702592456780" duration="11000" />
     </task>
     <servers />
   </component>

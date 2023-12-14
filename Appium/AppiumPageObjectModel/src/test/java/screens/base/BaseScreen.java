@@ -45,7 +45,7 @@ public class BaseScreen {
     }
 
     public void swipeElement(String id, String direction, Double percent, Integer speed) {
-        ((JavascriptExecutor) driver).executeScript("mobile: swipeGesture", ImmutableMap.of(
+        ((JavascriptExecutor) this.driver).executeScript("mobile: swipeGesture", ImmutableMap.of(
                 "elementId", id,
                 "direction", direction,
                 "percent", percent,

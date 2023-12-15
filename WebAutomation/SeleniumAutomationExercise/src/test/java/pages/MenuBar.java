@@ -21,4 +21,9 @@ public class MenuBar extends BasePage{
     public WebElement getSignUpLogin() {
         return this.elementos.get(3);
     }
+
+    public void clickSignUpLogin() {
+        this.waitClickable(this.getSignUpLogin());
+        this.clickElement(this.getSignUpLogin());
+    }
 }

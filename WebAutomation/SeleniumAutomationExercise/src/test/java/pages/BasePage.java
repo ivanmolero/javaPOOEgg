@@ -19,7 +19,7 @@ public class BasePage {
         this.url = "https://automationexercise.com/";
         this.driver = driver;
         PageFactory.initElements(driver, this);
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         this.softAssert = new SoftAssert();
     }
 
@@ -46,5 +46,9 @@ public class BasePage {
 
     public void textToElement(WebElement element, String text) {
         element.sendKeys(text);
+    }
+
+    public void close() {
+        this.driver.close();
     }
 }

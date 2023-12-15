@@ -15,5 +15,8 @@ public class HomePage extends BasePage{
         this.softAssert.assertTrue(this.menuBar.getHome().isDisplayed());
     }
 
-
+    public LoginPage clickSignUpLogin() {
+        this.menuBar.clickSignUpLogin();
+        return new LoginPage(this.driver);
+    }
 }

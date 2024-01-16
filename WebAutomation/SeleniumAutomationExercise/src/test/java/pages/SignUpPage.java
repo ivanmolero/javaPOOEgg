@@ -45,11 +45,11 @@ public class SignUpPage extends BasePage{
         this.textToElement(this.inputPassword, text);
     }
 
-    public void fillDay(String number) {
-        this.textToElement(this.selectDays, number);
+    public void fillDay(String day) {
+        this.textToElement(this.selectDays, day);
     }
 
-    public void fillMonth(String de) {
-        this.textToElement(this.selectMonths, de);
+    public void fillMonth(String month) {
+        this.textToElement(this.selectMonths, month);
     }
 }

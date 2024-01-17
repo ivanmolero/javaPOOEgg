@@ -10,6 +10,6 @@ public class WhenLoginSauceDemo {
 
     @CastMember
     Actor actor;
-    
+
 
 }

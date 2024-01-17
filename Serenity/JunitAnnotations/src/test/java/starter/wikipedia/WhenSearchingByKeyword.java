@@ -6,6 +6,7 @@ import org.assertj.core.api.SoftAssertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 @ExtendWith(SerenityJUnit5Extension.class)
 public class WhenSearchingByKeyword {
@@ -25,6 +26,14 @@ public class WhenSearchingByKeyword {
         searchActions.byKeyword("Microsoft");
 //        searchActions.clickSearchButton();
         softAssertions.assertThat(searchResult.getResultTitle()).isEqualTo("Microsoft");
+    }
 
+    @Test
+    public void theATagTest() {
+        navigateActions.toTheWikipediaPage();
+        searchActions.byKeyword("Microsoft");
+        for (WebElement element: searchResult.getTagA()) {
+            System.out.println(element.getText());
+        }
     }
 }

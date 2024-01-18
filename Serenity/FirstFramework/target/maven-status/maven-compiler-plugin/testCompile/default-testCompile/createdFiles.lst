@@ -2,5 +2,5 @@ starter/actions/search/LookForInformation.class
 starter/actions/search/SearchForm.class
 starter/actions/search/SearchArticle.class
 starter/actions/navigation/DuckDuckGoHomePage.class
-starter/acceptancetests/WhenSearchingForTerms.class
 starter/actions/navigation/NavigateTo.class
+starter/acceptancetests/WhenSearchingForTerms.class

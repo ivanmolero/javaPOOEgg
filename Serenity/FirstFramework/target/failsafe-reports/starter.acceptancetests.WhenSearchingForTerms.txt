@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: starter.acceptancetests.WhenSearchingForTerms
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.52 s -- in starter.acceptancetests.WhenSearchingForTerms
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.284 s -- in starter.acceptancetests.WhenSearchingForTerms

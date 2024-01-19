@@ -7,8 +7,8 @@ import net.serenitybdd.screenplay.ensure.Ensure;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import starter.actions.buyItem.ToBuy;
 import starter.actions.login.Inventory;
-import starter.actions.login.LoginForm;
 import starter.actions.login.WriteLoginData;
 import starter.actions.navigation.NavigateTo;
 
@@ -28,5 +28,27 @@ public class WhenLoginSauceDemo {
                 Ensure.that(Inventory.TITLE).hasText("Swag Labs")
         );
     }
+
+    @Test
+    @DisplayName("debe agregar items aleatorios al carrito y comprarlos")
+    public void randomBuy() {
+        actor.attemptsTo(
+                NavigateTo.theSauceDemoHomePage(),
+                WriteLoginData.writeUsername("standard_user"),
+                WriteLoginData.writePassword("secret_sauce"),
+                ToBuy.addRandomItem(),
+                ToBuy.goToShoppinCart(),
+                ToBuy.goToCheckout(),
+                ToBuy.writeFirstName("Juan"),
+                ToBuy.writeLastName("Garcia"),
+                ToBuy.writePostalCode("08006"),
+                ToBuy.pressContinueButton(),
+                Ensure.that(Inventory.TAG_PAYMENT).hasText("Payment Information"),
+                ToBuy.pressFinishButton(),
+                Ensure.that(Inventory.COMPLETE_HEADER).hasText("Thank you for your order!")
+        );
+    }
+
+
 
 }

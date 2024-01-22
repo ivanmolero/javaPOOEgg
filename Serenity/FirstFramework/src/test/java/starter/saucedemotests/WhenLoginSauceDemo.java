@@ -76,7 +76,8 @@ public class WhenLoginSauceDemo {
                 WriteLoginData.writeUsername("standard_user"),
                 WriteLoginData.writePassword("secret_sauce"),
                 WriteLoginData.pressLateralMenuButton(),
-                WriteLoginData.pressLogoutButton()
+                WriteLoginData.pressLogoutButton(),
+                Ensure.that(Inventory.LOGIN_BUTTON).hasValue("Login")
         );
     }
 

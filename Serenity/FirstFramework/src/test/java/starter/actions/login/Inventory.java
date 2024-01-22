@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 
 public class Inventory {
 
+    public static Target LOGIN_BUTTON = Target.the("login button").locatedBy("#login-button");
     public static Target LATERAL_MENU_BUTTON = Target.the("lateral menu button").locatedBy("#react-burger-menu-btn");
     public static Target LOGOUT_BUTTON = Target.the("logout button").locatedBy("#logout_sidebar_link");
     public static Target REMOVE_BUTTON = Target.the("remove cart item").locatedBy(".cart_button");

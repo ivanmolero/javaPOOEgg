@@ -20,6 +20,7 @@ public class ToBuy {
     }
 
     public static Performable goToShoppinCart() {
+
         return Task.where("{0} going to the cart shopping" ,
                 Click.on(Inventory.SHOPPING_CART_BUTTON)
         );
@@ -61,6 +62,12 @@ public class ToBuy {
     public static Performable pressFinishButton() {
         return Task.where("{0} going to the finish",
                 Click.on(Inventory.FINISH_BUTTON)
+        );
+    }
+
+    public static Performable removeItem() {
+        return Task.where("{0} going to remove an item from shopping cart",
+                Click.on(Inventory.REMOVE_BUTTON)
         );
     }
 }

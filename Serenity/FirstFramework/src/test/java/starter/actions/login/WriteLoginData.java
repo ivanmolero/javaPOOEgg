@@ -4,6 +4,7 @@ import net.serenitybdd.annotations.Managed;
 import net.serenitybdd.core.steps.UIInteractions;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -22,6 +23,18 @@ public class WriteLoginData {
                 Enter.theValue(password)
                         .into(LoginForm.PASSWORD_FIELD)
                         .thenHit(Keys.ENTER)
+        );
+    }
+
+    public static Performable pressLogoutButton() {
+        return Task.where("{0} press logout button",
+                Click.on(Inventory.LOGOUT_BUTTON)
+        );
+    }
+
+    public static Performable pressLateralMenuButton() {
+        return Task.where("{0} press lateral menu button",
+                Click.on(Inventory.LATERAL_MENU_BUTTON)
         );
     }
 }

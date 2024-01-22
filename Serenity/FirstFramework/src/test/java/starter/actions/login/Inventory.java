@@ -1,12 +1,16 @@
 package starter.actions.login;
 
 import net.serenitybdd.annotations.Managed;
+import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class Inventory {
 
+    public static Target LATERAL_MENU_BUTTON = Target.the("lateral menu button").locatedBy("#react-burger-menu-btn");
+    public static Target LOGOUT_BUTTON = Target.the("logout button").locatedBy("#logout_sidebar_link");
+    public static Target REMOVE_BUTTON = Target.the("remove cart item").locatedBy(".cart_button");
     public static Target TAG_PAYMENT = Target.the("tag payment").locatedBy(".summary_info_label");
 
     public static Target TITLE = Target.the("title").locatedBy(".app_logo");

@@ -49,6 +49,35 @@ public class WhenLoginSauceDemo {
         );
     }
 
+    @Test
+    @DisplayName("debe agregar tres items y removerlos, verificar que el carrito este vacio")
+    public void removeItems() {
+        actor.attemptsTo(
+                NavigateTo.theSauceDemoHomePage(),
+                WriteLoginData.writeUsername("standard_user"),
+                WriteLoginData.writePassword("secret_sauce"),
+                ToBuy.addRandomItem(),
+                ToBuy.addRandomItem(),
+                ToBuy.addRandomItem(),
+                ToBuy.goToShoppinCart(),
+                ToBuy.removeItem(),
+                ToBuy.removeItem(),
+                ToBuy.removeItem(),
+                Ensure.that(Inventory.REMOVE_BUTTON).isNotDisplayed()
 
+        );
+    }
+
+    @Test
+    @DisplayName("logout")
+    public void logout() {
+        actor.attemptsTo(
+                NavigateTo.theSauceDemoHomePage(),
+                WriteLoginData.writeUsername("standard_user"),
+                WriteLoginData.writePassword("secret_sauce"),
+                WriteLoginData.pressLateralMenuButton(),
+                WriteLoginData.pressLogoutButton()
+        );
+    }
 
 }

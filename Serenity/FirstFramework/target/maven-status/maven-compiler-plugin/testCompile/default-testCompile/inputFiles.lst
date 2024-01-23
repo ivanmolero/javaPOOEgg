@@ -1,6 +1,12 @@
 /home/imolero/IdeaProjects/POO/Serenity/FirstFramework/src/test/java/starter/actions/search/SearchArticle.java
 /home/imolero/IdeaProjects/POO/Serenity/FirstFramework/src/test/java/starter/actions/navigation/NavigateTo.java
+/home/imolero/IdeaProjects/POO/Serenity/FirstFramework/src/test/java/starter/saucedemotests/WhenLoginSauceDemo.java
+/home/imolero/IdeaProjects/POO/Serenity/FirstFramework/src/test/java/starter/actions/login/Inventory.java
+/home/imolero/IdeaProjects/POO/Serenity/FirstFramework/src/test/java/starter/actions/login/LoginForm.java
+/home/imolero/IdeaProjects/POO/Serenity/FirstFramework/src/test/java/starter/actions/buyItem/ToBuy.java
 /home/imolero/IdeaProjects/POO/Serenity/FirstFramework/src/test/java/starter/actions/search/LookForInformation.java
 /home/imolero/IdeaProjects/POO/Serenity/FirstFramework/src/test/java/starter/acceptancetests/WhenSearchingForTerms.java
+/home/imolero/IdeaProjects/POO/Serenity/FirstFramework/src/test/java/starter/actions/login/WriteLoginData.java
 /home/imolero/IdeaProjects/POO/Serenity/FirstFramework/src/test/java/starter/actions/search/SearchForm.java
 /home/imolero/IdeaProjects/POO/Serenity/FirstFramework/src/test/java/starter/actions/navigation/DuckDuckGoHomePage.java
+/home/imolero/IdeaProjects/POO/Serenity/FirstFramework/src/test/java/starter/actions/navigation/SauceDemoHomePage.java
